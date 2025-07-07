@@ -81,7 +81,6 @@ const images = [
 </section>
 
 <script>
-  // Initialize carousel functionality
   function initCarousel() {
     const carousel = document.getElementById('carousel');
     const slides = document.querySelectorAll('.carousel-slide');
@@ -94,19 +93,15 @@ const images = [
     let currentIndex = 0;
     const slideCount = slides.length;
     
-    // Set initial active indicator
     updateIndicators();
     
-    // Auto-advance carousel
     let autoplayInterval = setInterval(nextSlide, 5000);
     
-    // Reset interval on user interaction
     function resetInterval() {
       clearInterval(autoplayInterval);
       autoplayInterval = setInterval(nextSlide, 5000);
     }
     
-    // Update indicators
     function updateIndicators() {
       indicators.forEach((indicator, index) => {
         if (index === currentIndex) {
@@ -119,7 +114,6 @@ const images = [
       });
     }
     
-    // Go to specific slide
     function goToSlide(index: number) {
       currentIndex = index;
       if (carousel) {
@@ -129,37 +123,29 @@ const images = [
       resetInterval();
     }
     
-    // Next slide function
     function nextSlide() {
       currentIndex = (currentIndex + 1) % slideCount;
       goToSlide(currentIndex);
     }
     
-    // Previous slide function
     function prevSlide() {
       currentIndex = (currentIndex - 1 + slideCount) % slideCount;
       goToSlide(currentIndex);
     }
     
-    // Event listeners
     prevButton?.addEventListener('click', prevSlide);
     nextButton?.addEventListener('click', nextSlide);
     
-    // Indicator click events
     indicators.forEach((indicator, index: number) => {
       indicator.addEventListener('click', () => goToSlide(index));
     });
     
-    // Pause autoplay on hover
     carousel.parentElement?.addEventListener('mouseenter', () => clearInterval(autoplayInterval));
     carousel.parentElement?.addEventListener('mouseleave', () => {
       autoplayInterval = setInterval(nextSlide, 5000);
     });
   }
   
-  // Initialize when DOM is loaded
   document.addEventListener('DOMContentLoaded', initCarousel);
-  
-  // Initialize when Astro page is loaded/navigated
   document.addEventListener('astro:page-load', initCarousel);
 </script>
