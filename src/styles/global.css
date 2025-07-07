@@ -2,9 +2,6 @@
 
 @theme {
   --color-primary: oklch(0.7346 0.0701 84.22);
-  --color-background: oklch(0.198 0.0304 83.72);
-  --color-background-secondary: oklch(0.9058 0.0721 83.72);
-  --color-secondary: #4b5563;
-  --color-accent: #3245ff;
-  --color-text: oklch(0.2041 0.0115 83.72);
+  --color-secondary: oklch(0.198 0.0304 83.72);
+  /* --color-background-secondary: oklch(0.9058 0.0721 83.72); */
 }
