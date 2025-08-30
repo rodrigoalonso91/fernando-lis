@@ -1,52 +1,36 @@
-# Astro Starter Kit: Basics
+# Fluydo Web
 
-```sh
-npm create astro@latest -- --template basics
+Este es el repositorio para el sitio web de Fluydo S.A., importadores de marroquinería y accesorios de moda. El sitio está construido con Astro y estilizado con Tailwind CSS.
+
+## 🚀 Entorno de Desarrollo
+
+Sigue estos pasos para levantar el entorno de desarrollo en tu máquina local.
+
+### 1. Instalar Dependencias
+
+Abre una terminal en la raíz del proyecto y ejecuta el siguiente comando para instalar todas las dependencias necesarias.
+
+```bash
+npm install
 ```
 
-[![Open in StackBlitz](https://developer.stackblitz.com/img/open_in_stackblitz.svg)](https://stackblitz.com/github/withastro/astro/tree/latest/examples/basics)
-[![Open with CodeSandbox](https://assets.codesandbox.io/github/button-edit-lime.svg)](https://codesandbox.io/p/sandbox/github/withastro/astro/tree/latest/examples/basics)
-[![Open in GitHub Codespaces](https://github.com/codespaces/badge.svg)](https://codespaces.new/withastro/astro?devcontainer_path=.devcontainer/basics/devcontainer.json)
+### 2. Iniciar el Servidor de Desarrollo
 
-> 🧑‍🚀 **Seasoned astronaut?** Delete this file. Have fun!
+Una vez instaladas las dependencias, ejecuta el siguiente comando para iniciar el servidor de desarrollo de Astro.
 
-![just-the-basics](https://github.com/withastro/astro/assets/2244813/a0a5533c-a856-4198-8470-2d67b1d7c554)
-
-## 🚀 Project Structure
-
-Inside of your Astro project, you'll see the following folders and files:
-
-```text
-/
-├── public/
-│   └── favicon.svg
-├── src
-│   ├── assets
-│   │   └── astro.svg
-│   ├── components
-│   │   └── Welcome.astro
-│   ├── layouts
-│   │   └── Layout.astro
-│   └── pages
-│       └── index.astro
-└── package.json
+```bash
+npm run dev
 ```
 
-To learn more about the folder structure of an Astro project, refer to [our guide on project structure](https://docs.astro.build/en/basics/project-structure/).
+Por defecto, el sitio estará disponible en `http://localhost:4321`.
 
-## 🧞 Commands
+## 🛠️ Tecnologías Utilizadas
 
-All commands are run from the root of the project, from a terminal:
+-   **[Astro](https://astro.build/)**: El framework web para construir sitios rápidos y centrados en el contenido.
+-   **[Tailwind CSS](https://tailwindcss.com/)**: Un framework de CSS "utility-first" para un diseño rápido y personalizado.
+-   **[TypeScript](https://www.typescriptlang.org/)**: Un superconjunto de JavaScript que añade tipado estático.
 
-| Command                   | Action                                           |
-| :------------------------ | :----------------------------------------------- |
-| `npm install`             | Installs dependencies                            |
-| `npm run dev`             | Starts local dev server at `localhost:4321`      |
-| `npm run build`           | Build your production site to `./dist/`          |
-| `npm run preview`         | Preview your build locally, before deploying     |
-| `npm run astro ...`       | Run CLI commands like `astro add`, `astro check` |
-| `npm run astro -- --help` | Get help using the Astro CLI                     |
+## 🧞 Comandos Útiles
 
-## 👀 Want to learn more?
-
-Feel free to check [our documentation](https://docs.astro.build) or jump into our [Discord server](https://astro.build/chat).
+-   `npm run build`: Compila el sitio para producción en el directorio `dist/`.
+-   `npm run preview`: Sirve el sitio de producción localmente para previsualización.
